@@ -56,7 +56,7 @@ export const columns: ColumnDef<Course>[] = [
       return (
         <Badge
           className={`${
-            isPublished && "bg-[#FDAB04] text-black hover:bg-[#FDAB04]"
+            isPublished && "bg-slate-100 text-black hover:bg-slate-200"
           }`}
         >
           {isPublished ? "Published" : "Draft"}

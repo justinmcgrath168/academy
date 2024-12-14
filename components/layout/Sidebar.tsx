@@ -22,8 +22,10 @@ const Sidebar = () => {
         <Link
           href={route.path}
           key={route.path}
-          className={`flex items-center gap-4 p-3 rounded-lg hover:bg-[#FFF8EB]
-          ${pathname.startsWith(route.path) && "bg-[#FDAB04] hover:bg-[#FDAB04]/80"}
+          className={`flex items-center gap-4 p-3 rounded-lg hover:bg-slate-200
+          ${
+            pathname.startsWith(route.path) && "bg-slate-100 hover:bg-slate-200"
+          }
           `}
         >
           {route.icon} {route.label}

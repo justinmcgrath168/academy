@@ -52,13 +52,13 @@ const Topbar = () => {
 
       <div className="max-md:hidden w-[400px] rounded-full flex">
         <input
-          className="flex-grow bg-[#FFF8EB] rounded-l-full border-none outline-none text-sm pl-4 py-3"
+          className="flex-grow bg-slate-100 rounded-l-full border-none outline-none text-sm pl-4 py-3"
           placeholder="Search for courses"
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
         />
         <button
-          className="bg-[#FDAB04] rounded-r-full border-none outline-none cursor-pointer px-4 py-3 hover:bg-[#FDAB04]/80"
+          className="bg-slate-100 rounded-r-full border-none outline-none cursor-pointer px-4 py-3 hover:bg-slate-200"
           disabled={searchInput.trim() === ""}
           onClick={handleSearch}
         >
@@ -96,7 +96,7 @@ const Topbar = () => {
                   </Link>
                 ))}
               </div>
-              
+
               {pathName.startsWith("/instructor") && (
                 <div className="flex flex-col gap-4">
                   {sidebarRoutes.map((route) => (

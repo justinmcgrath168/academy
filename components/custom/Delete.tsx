@@ -66,12 +66,15 @@ const Delete = ({ item, courseId, sectionId }: DeleteProps) => {
             Are you absolutely sure?
           </AlertDialogTitle>
           <AlertDialogDescription>
-            This action cannot be undone. This will permanently delete your {item}
+            This action cannot be undone. This will permanently delete your{" "}
+            {item}
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
           <AlertDialogCancel>Cancel</AlertDialogCancel>
-          <AlertDialogAction className="bg-[#FDAB04]" onClick={onDelete}>Delete</AlertDialogAction>
+          <AlertDialogAction className="bg-slate-100" onClick={onDelete}>
+            Delete
+          </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>

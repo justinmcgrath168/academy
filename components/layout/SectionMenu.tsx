@@ -18,7 +18,7 @@ const SectionMenu = ({ course }: SectionMenuProps) => {
         <SheetContent className="flex flex-col">
           <Link
             href={`/courses/${course.id}/overview`}
-            className={`p-3 rounded-lg hover:bg-[#FFF8EB] mt-4`}
+            className={`p-3 rounded-lg hover:bg-slate-200 mt-4`}
           >
             Overview
           </Link>
@@ -26,7 +26,7 @@ const SectionMenu = ({ course }: SectionMenuProps) => {
             <Link
               key={section.id}
               href={`/courses/${course.id}/sections/${section.id}`}
-              className="p-3 rounded-lg hover:bg-[#FFF8EB] mt-4"
+              className="p-3 rounded-lg hover:bg-slate-200 mt-4"
             >
               {section.title}
             </Link>
